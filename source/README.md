@@ -1,0 +1,1 @@
+Brique chargée de requéter les api Deezer et Spotify et d'enregister les données dans le cluster hdfs

@@ -1,0 +1,1 @@
+Tranfert les données formatées de hdfs à la base postgresql
