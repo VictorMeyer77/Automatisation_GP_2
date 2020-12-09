@@ -2,7 +2,7 @@ package com.esgi.gptwo.spark
 
 import org.apache.spark.sql._
 
-class SaveData(spark: SparkSession, data: String){
+class SaveData(spark: SparkSession, data: _){
 
   def test(): Unit ={
 
@@ -10,5 +10,4 @@ class SaveData(spark: SparkSession, data: String){
       .format("org.apache.spark.sql.execution.datasources.v2.json.JsonDataSourceV2").load(data).show()
 
   }
-
 }

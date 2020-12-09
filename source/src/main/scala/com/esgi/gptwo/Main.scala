@@ -31,8 +31,9 @@ object Main {
       val api: SpotifyApi = new SpotifyApi(conf.confSpotify)
       val test: SpotifyArtist = api.artistsRequest("0OdUWJ0sBjDrqHygGUXeCF")
       println(test.toString)
-      //val saver: SaveData = new SaveData(spark, test.toString)
-      //saver.test()
+      val g = new Gson
+      val saver: SaveData = new SaveData(g.toJson(test))
+      saver.test()
 
     }
 
