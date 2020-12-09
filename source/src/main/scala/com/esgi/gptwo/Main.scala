@@ -1,13 +1,13 @@
 package com.esgi.gptwo
 
 import java.nio.charset.StandardCharsets
-
 import com.esgi.gptwo.api.SpotifyApi
+import com.esgi.gptwo.api.DeezerApi
 import com.google.gson.Gson
 
 import scala.io.Source
-import com.esgi.gptwo.bean.{Configuration, SpotifyArtist}
-import com.esgi.gptwo.spark.SaveData
+import com.esgi.gptwo.bean.{Configuration, DeezerArtist, SpotifyArtist}
+//import com.esgi.gptwo.spark.SaveData
 import org.apache.spark.sql._
 
 object Main {
@@ -32,8 +32,13 @@ object Main {
       val test: SpotifyArtist = api.artistsRequest("0OdUWJ0sBjDrqHygGUXeCF")
       println(test.toString)
       val g = new Gson
-      val saver: SaveData = new SaveData(g.toJson(test))
-      saver.test()
+      //val saver: SaveData = new SaveData(g.toJson(test))
+      //saver.test()
+
+      //Test deezer
+      val deezapi: DeezerApi = new DeezerApi()
+      val testDeezer: DeezerArtist = deezapi.getArtist(27)
+      println(testDeezer.toString)
 
     }
 
