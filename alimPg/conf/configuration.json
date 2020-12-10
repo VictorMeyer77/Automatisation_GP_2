@@ -1,0 +1,16 @@
+{
+
+  "postgres": {
+    "address": "localhost",
+    "user": "gp2",
+    "database": "music_follower",
+    "password": "gyjipo9",
+    "port": 5432
+
+  },
+
+  "hangar": "/data/hangar",
+  "checkpointPath": "/alimPg/checkpoint",
+  "tablesToAlim": ["artist_tracking", "music_tracking"]
+
+}
