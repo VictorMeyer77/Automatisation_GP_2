@@ -4,8 +4,30 @@
 
     "grant_type": "client_credentials",
     "client_id": "2f4f508510af48af90c1dc12e94a31de",
-    "client_secret": "a189e4f54e4249a881e82696ad789153"
+    "client_secret": "a189e4f54e4249a881e82696ad789153",
+    "countries": [
+      "US",
+      "FR",
+      "CN",
+      "DE",
+      "ES",
+      "GB",
+      "CA",
+      "AU"
+    ]
 
-  }
+  },
+
+  "postgres": {
+
+    "address": "localhost",
+    "user": "gp2",
+    "database": "music_follower",
+    "password": "gyjipo9",
+    "port": 5432
+
+  },
+
+  "hangar": "/home/victor/esgi/M2/fyc/Automatisation_GP_2/source/hangar"
 
 }
