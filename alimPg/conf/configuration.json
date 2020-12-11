@@ -9,8 +9,8 @@
 
   },
 
-  "hangar": "/data/hangar",
-  "checkpointPath": "/alimPg/checkpoint",
+  "hangar": "/user/groupe2/data/hangar",
+  "checkpointPath": "/user/groupe2/alimPg/checkpoint",
   "tablesToAlim": ["artist_tracking", "music_tracking"]
 
 }
