@@ -5,8 +5,8 @@ version := "0.1"
 scalaVersion := "2.12.2"
 
 libraryDependencies += "com.google.code.gson" % "gson" % "1.7.1"
-libraryDependencies += "org.apache.spark" %% "spark-core" % "2.4.5" % "compile"
-libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.5" % "compile"
+libraryDependencies += "org.apache.spark" %% "spark-core" % "3.0.1" % "compile"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.0.1" % "compile"
 libraryDependencies += "org.postgresql" % "postgresql" % "42.2.18"
 
 assemblyMergeStrategy in assembly := {
