@@ -1,10 +1,10 @@
 package com.esgi.gptwo
 
 import com.google.gson.Gson
-//import org.apache.hadoop.fs
+import org.apache.hadoop.fs
 import org.apache.spark.sql.SparkSession
-//import org.apache.hadoop
-//import org.apache.hadoop.fs.Path
+import org.apache.hadoop
+import org.apache.hadoop.fs.Path
 
 import scala.io.Source
 
@@ -16,13 +16,13 @@ object Main {
 
   def main(args: Array[String]): Unit ={
 
-    /*val conf: bean.conf.Configuration = readConf(args(0))
+    val conf: bean.conf.Configuration = readConf(args(0))
 
-    new Alim(conf).run()*/
+    new Alim(conf).run()
 
   }
 
- /* def readConf(confPath: String): bean.conf.Configuration ={
+  def readConf(confPath: String): bean.conf.Configuration ={
 
     val hdfs = fs.FileSystem.get(new hadoop.conf.Configuration)
     val path: Path = new Path(confPath)
@@ -32,5 +32,5 @@ object Main {
     val conf: bean.conf.Configuration = gson.fromJson(streamStr, classOf[bean.conf.Configuration])
     conf
 
-  }*/
+  }
 }
