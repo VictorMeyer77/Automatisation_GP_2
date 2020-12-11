@@ -77,7 +77,7 @@ class Alim(conf: Configuration) {
       conf.tablesToAlim.forEach(table => {
 
         val df: DataFrame = loadJson(conf.hangar + "/" + table)
-        val dfFormatDatMaj = formatDate(df, "datetablemaj")
+        val dfFormatDatMaj = formatDate(df, "date_maj")
         val checkpoint: String = readCheckpoint(conf.checkpointPath + "/" + table + ".json")
         insertDf(dfFormatDatMaj, table, checkpoint)
         writeCheckpoint(conf.checkpointPath + "/" + table + ".json", dfFormatDatMaj)

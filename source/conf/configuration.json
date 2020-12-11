@@ -20,13 +20,13 @@
 
   "postgres": {
 
-    "address": "localhost",
-    "user": "gp2",
-    "database": "music_follower",
-    "password": "gyjipo9",
+    "address": "master.sagean.fr",
+    "user": "grp2",
+    "database": "grp2",
+    "password": "grp2",
     "port": 5432
 
   },
 
-  "hangar": "/user/groupe2/data/hangar"
+  "hangar": "hangar"
 }
