@@ -9,7 +9,6 @@ class Alim(conf: Configuration) {
 
   val spark: SparkSession = SparkSession
     .builder()
-    .appName("automatisation_load_data")
     .getOrCreate()
 
   val gson: Gson = new Gson

@@ -17,6 +17,7 @@ if $(hadoop fs -test -d "/user/groupe2/app/source") ; then echo "ok"; else hdfs 
 if $(hadoop fs -test -d "/user/groupe2/app/source/conf");  then echo "ok"; else hdfs dfs -mkdir "/user/groupe2/app/source/conf"; fi
 if $(hadoop fs -test -d "/user/groupe2/app/alimPg/lib") ; then echo "ok"; else hdfs dfs -mkdir "/user/groupe2/app/alimPg/lib"; fi
 if $(hadoop fs -test -d "/user/groupe2/app/source/lib") ; then echo "ok"; else hdfs dfs -mkdir "/user/groupe2/app/source/lib"; fi
+if $(hadoop fs -test -d "/user/groupe2/app/alimPg/checkpoint") ; then echo "ok"; else hdfs dfs -mkdir "/user/groupe2/app/alimPg/checkpoint"; fi
 
 hdfs dfs -put -f alimPg/target/scala-2.12/alimPg-assembly-0.1.jar /user/groupe2/app/alimPg/lib
 hdfs dfs -put -f alimPg/conf/configuration.json /user/groupe2/app/alimPg/conf

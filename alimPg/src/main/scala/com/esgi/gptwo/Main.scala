@@ -12,7 +12,6 @@ object Main {
 
   val spark: SparkSession = SparkSession
     .builder()
-    .appName("automatisation_load_data")
     .getOrCreate()
 
   def main(args: Array[String]): Unit ={

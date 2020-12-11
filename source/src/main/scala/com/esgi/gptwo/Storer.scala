@@ -12,7 +12,6 @@ class Storer(idDeezer: String, idSpotify: String, hangarPath: String, conf: Conf
 
   val spark: SparkSession = SparkSession
     .builder()
-    .appName("automatisation_load_data")
     .getOrCreate()
 
   val gson = new Gson
