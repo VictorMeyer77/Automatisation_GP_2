@@ -41,7 +41,7 @@ object Main {
 
   def readConf(confPath: String): bean.conf.Configuration ={
 
-    val hdfs = fs.FileSystem.get(new hadoop.conf.Configuration)
+    val hdfs = fs.FileSystem.get()
     val path: Path = new Path(confPath)
     val stream = hdfs.open(path)
     val streamStr = Source.fromInputStream(stream).mkString
