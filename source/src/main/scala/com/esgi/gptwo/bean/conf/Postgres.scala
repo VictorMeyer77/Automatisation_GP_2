@@ -6,7 +6,7 @@ case class Postgres (
                       user: String,
                       database: String,
                       password: String,
-                      port: Int,
+                      port: Int
 
                     )
 
